@@ -1,0 +1,4007 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_48f83b2416d66af3ae553ab850a56506 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_48f83b2416d66af3ae553ab850a56506" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_48f83b2416d66af3ae553ab850a56506 = L.map(
+                "map_48f83b2416d66af3ae553ab850a56506",
+                {
+                    center: [-36.9486871, -73.0121618],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_27891878fe97b51a463817f8cf7ea09a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_27891878fe97b51a463817f8cf7ea09a.addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var marker_6af0cbd0dcc2652a52121db409380f5c = L.marker(
+                [-36.9486871, -73.0121618],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_fc98a3a23ca1968fc83de2ddc9154a2d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6af0cbd0dcc2652a52121db409380f5c.bindTooltip(
+                `<div>
+                     Salida Terminal Las Galaxias
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6af0cbd0dcc2652a52121db409380f5c.setIcon(icon_fc98a3a23ca1968fc83de2ddc9154a2d);
+            
+    
+            var marker_b7f88842c5a06899f46a0408af362fb4 = L.marker(
+                [-36.9492744, -73.0122925],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_9ee4b7629b760cec12272574c2fd4bab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b7f88842c5a06899f46a0408af362fb4.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - Calle1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b7f88842c5a06899f46a0408af362fb4.setIcon(icon_9ee4b7629b760cec12272574c2fd4bab);
+            
+    
+            var marker_d156d6cb46a47e4a0b45cba7ac261117 = L.marker(
+                [-36.9514204, -73.0131307],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_9f5050f1a49049464679822e78cad77a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d156d6cb46a47e4a0b45cba7ac261117.bindTooltip(
+                `<div>
+                     La Leonera
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d156d6cb46a47e4a0b45cba7ac261117.setIcon(icon_9f5050f1a49049464679822e78cad77a);
+            
+    
+            var marker_15c5d2dc6219a2b60254efbfeb8c03ab = L.marker(
+                [-36.9516387, -73.0114326],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_f12de1d0e23aad8fbd4024ff25d7c9d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_15c5d2dc6219a2b60254efbfeb8c03ab.bindTooltip(
+                `<div>
+                     Paradero OSM sin nombre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_15c5d2dc6219a2b60254efbfeb8c03ab.setIcon(icon_f12de1d0e23aad8fbd4024ff25d7c9d0);
+            
+    
+            var marker_5ec48b03e961e9b0122c51fd7f2be839 = L.marker(
+                [-36.9508397, -73.0105278],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_eb4f134963f8497048efe832facd7d25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5ec48b03e961e9b0122c51fd7f2be839.bindTooltip(
+                `<div>
+                     Calle 1 - Calle 4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5ec48b03e961e9b0122c51fd7f2be839.setIcon(icon_eb4f134963f8497048efe832facd7d25);
+            
+    
+            var marker_0e8c03082a51f0504c9b8d266d44129e = L.marker(
+                [-36.9505386, -73.0101282],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_7016401e1ae6fc65eba915a67bdaccb5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0e8c03082a51f0504c9b8d266d44129e.bindTooltip(
+                `<div>
+                     Calle 1 - Pasaje 8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0e8c03082a51f0504c9b8d266d44129e.setIcon(icon_7016401e1ae6fc65eba915a67bdaccb5);
+            
+    
+            var marker_1143cdfe36de30560f98bdba9e33129e = L.marker(
+                [-36.9500949, -73.0092578],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_9d80373b2a5ab07ee639460271781b65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1143cdfe36de30560f98bdba9e33129e.bindTooltip(
+                `<div>
+                     Calle 1 - Pasaje 9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1143cdfe36de30560f98bdba9e33129e.setIcon(icon_9d80373b2a5ab07ee639460271781b65);
+            
+    
+            var marker_5297e010bddf3de03ac470ef6abd34c6 = L.marker(
+                [-36.9498061, -73.0089592],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_646948eb0cabac4f22accbaf4b78ca65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5297e010bddf3de03ac470ef6abd34c6.bindTooltip(
+                `<div>
+                     Calle 1 - Calle 5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5297e010bddf3de03ac470ef6abd34c6.setIcon(icon_646948eb0cabac4f22accbaf4b78ca65);
+            
+    
+            var marker_fd892fe720c61ac3210a89890707976e = L.marker(
+                [-36.9472664, -73.0087408],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_68bd397e6302f69a9f0747a6a9d0ce45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fd892fe720c61ac3210a89890707976e.bindTooltip(
+                `<div>
+                     Pasaje 8 - Calle 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd892fe720c61ac3210a89890707976e.setIcon(icon_68bd397e6302f69a9f0747a6a9d0ce45);
+            
+    
+            var marker_85c56bf2574cef8a415dc45ab79588f3 = L.marker(
+                [-36.9469605, -73.00961],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_d275cf44a2a864530d950114a2d6a789 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_85c56bf2574cef8a415dc45ab79588f3.bindTooltip(
+                `<div>
+                     Paradero OSM sin nombre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_85c56bf2574cef8a415dc45ab79588f3.setIcon(icon_d275cf44a2a864530d950114a2d6a789);
+            
+    
+            var marker_ca4056079cce82bce286c7b4634dc484 = L.marker(
+                [-36.9467, -73.0109535],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_27a1f237ab894d9def8915cbfae4dcb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ca4056079cce82bce286c7b4634dc484.bindTooltip(
+                `<div>
+                     Calle 1 - Pasaje1 / Norte
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca4056079cce82bce286c7b4634dc484.setIcon(icon_27a1f237ab894d9def8915cbfae4dcb0);
+            
+    
+            var marker_96ebe1789e916b05efc99f92b88fbde9 = L.marker(
+                [-36.9426223, -73.0099109],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_6ad95131e6f4e3b738092740a2e8078b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_96ebe1789e916b05efc99f92b88fbde9.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - Calle 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_96ebe1789e916b05efc99f92b88fbde9.setIcon(icon_6ad95131e6f4e3b738092740a2e8078b);
+            
+    
+            var marker_4fe1c417796cdec6c0929a5a41fe7d13 = L.marker(
+                [-36.9416233, -73.0098774],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_a5c817f82135bd6f245dd71af4e51b64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4fe1c417796cdec6c0929a5a41fe7d13.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - Calle 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4fe1c417796cdec6c0929a5a41fe7d13.setIcon(icon_a5c817f82135bd6f245dd71af4e51b64);
+            
+    
+            var marker_6ba13400f4dff5a642656b24e7bbe250 = L.marker(
+                [-36.9375961, -73.0114854],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_ccda82188091ebb6bc2f7f60e36f5a15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6ba13400f4dff5a642656b24e7bbe250.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - Calle B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ba13400f4dff5a642656b24e7bbe250.setIcon(icon_ccda82188091ebb6bc2f7f60e36f5a15);
+            
+    
+            var marker_a20c3fb42a01bbe217c765aed795dcdd = L.marker(
+                [-36.936924, -73.0117973],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_c98bb8dd316c2db80a7445ecba28630e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a20c3fb42a01bbe217c765aed795dcdd.bindTooltip(
+                `<div>
+                     B O'Higgins - Calle A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a20c3fb42a01bbe217c765aed795dcdd.setIcon(icon_c98bb8dd316c2db80a7445ecba28630e);
+            
+    
+            var marker_14f5ca38ddeee49af024f80580d492dc = L.marker(
+                [-36.934607, -73.0128828],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_6f88060ab883a3d6bc2c5d5087504687 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_14f5ca38ddeee49af024f80580d492dc.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - El Maitén
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14f5ca38ddeee49af024f80580d492dc.setIcon(icon_6f88060ab883a3d6bc2c5d5087504687);
+            
+    
+            var marker_ce277b4e92e5f176eff248de033fd4d6 = L.marker(
+                [-36.933327, -73.0138732],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_47f74ab168d7dd2ad3dcc626335984c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ce277b4e92e5f176eff248de033fd4d6.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - El Nogal / Oriente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ce277b4e92e5f176eff248de033fd4d6.setIcon(icon_47f74ab168d7dd2ad3dcc626335984c6);
+            
+    
+            var marker_df7ad3c8e9a466ad6591e2993ca529e2 = L.marker(
+                [-36.9332815, -73.0138149],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_2f0614596fc4c9a137240312b7782785 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_df7ad3c8e9a466ad6591e2993ca529e2.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - El Nogal / Poniente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_df7ad3c8e9a466ad6591e2993ca529e2.setIcon(icon_2f0614596fc4c9a137240312b7782785);
+            
+    
+            var marker_0dfd5930811b708f72ab7622ddc28073 = L.marker(
+                [-36.9307193, -73.0162698],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_c40f9b0b25c2e06876e1f1612d1b64e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0dfd5930811b708f72ab7622ddc28073.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - El Peral
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0dfd5930811b708f72ab7622ddc28073.setIcon(icon_c40f9b0b25c2e06876e1f1612d1b64e5);
+            
+    
+            var marker_c6ed5ab92e30c8732d4c2d4c11a67e10 = L.marker(
+                [-36.9294141, -73.0175324],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_332191b0d8fcc7e0af14faedebbd20a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c6ed5ab92e30c8732d4c2d4c11a67e10.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - Pinares / Oriente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6ed5ab92e30c8732d4c2d4c11a67e10.setIcon(icon_332191b0d8fcc7e0af14faedebbd20a9);
+            
+    
+            var marker_86ceff4c149ae8545b26f519685df0ec = L.marker(
+                [-36.9294388, -73.0176656],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_22354f80d0c41d0673e96b99f2f63d04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_86ceff4c149ae8545b26f519685df0ec.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - Pinares / Poniente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_86ceff4c149ae8545b26f519685df0ec.setIcon(icon_22354f80d0c41d0673e96b99f2f63d04);
+            
+    
+            var marker_1d6c0ade68ce3d02f839187fb16da144 = L.marker(
+                [-36.9282553, -73.0186571],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_532c99c3ccdb4248ad32dff63d282e86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1d6c0ade68ce3d02f839187fb16da144.bindTooltip(
+                `<div>
+                     Paradero OSM sin nombre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d6c0ade68ce3d02f839187fb16da144.setIcon(icon_532c99c3ccdb4248ad32dff63d282e86);
+            
+    
+            var marker_0a2c20da5e3f269de2ae79358f587c86 = L.marker(
+                [-36.9272657, -73.0197357],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_045a8787be8cf44bd67b1b37ea2a54e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0a2c20da5e3f269de2ae79358f587c86.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - Sta Justina / Poniente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0a2c20da5e3f269de2ae79358f587c86.setIcon(icon_045a8787be8cf44bd67b1b37ea2a54e0);
+            
+    
+            var marker_65aab6314185bebf71f42c29d49dc7e7 = L.marker(
+                [-36.9271269, -73.0197393],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_260f4411de1d99f3ebc6bbf1008a7a3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_65aab6314185bebf71f42c29d49dc7e7.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - Sta Justina / Oriente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_65aab6314185bebf71f42c29d49dc7e7.setIcon(icon_260f4411de1d99f3ebc6bbf1008a7a3f);
+            
+    
+            var marker_fcc93a1080acda260616b4d168cfbfae = L.marker(
+                [-36.9249838, -73.0218159],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_96ef88a2e1497c19025e8c65e83c1872 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fcc93a1080acda260616b4d168cfbfae.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - Calle Nueva
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fcc93a1080acda260616b4d168cfbfae.setIcon(icon_96ef88a2e1497c19025e8c65e83c1872);
+            
+    
+            var marker_4e7fa605cd02dac9e60656ed52075287 = L.marker(
+                [-36.9211669, -73.0246907],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_c1a304af105eaacd6b73d313a57ea17e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4e7fa605cd02dac9e60656ed52075287.bindTooltip(
+                `<div>
+                     Bdo O'Higgins - Cochrane / Oriente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4e7fa605cd02dac9e60656ed52075287.setIcon(icon_c1a304af105eaacd6b73d313a57ea17e);
+            
+    
+            var marker_13fa5e90ef14b0282967016d0ed96253 = L.marker(
+                [-36.9211139, -73.0248809],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_a87a1968eb8f11571343cb3df23c07db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_13fa5e90ef14b0282967016d0ed96253.bindTooltip(
+                `<div>
+                     Bdo O'Higgins - Cochrane / Poniente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13fa5e90ef14b0282967016d0ed96253.setIcon(icon_a87a1968eb8f11571343cb3df23c07db);
+            
+    
+            var marker_d870ddc4907613ce79af42c283b3bc1f = L.marker(
+                [-36.915599, -73.0283727],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_7eb4bf6dbf1beae63e7daf758d2f08db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d870ddc4907613ce79af42c283b3bc1f.bindTooltip(
+                `<div>
+                     Chiguayante / Oriente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d870ddc4907613ce79af42c283b3bc1f.setIcon(icon_7eb4bf6dbf1beae63e7daf758d2f08db);
+            
+    
+            var marker_d210fd068bb902f3e293618938381ef9 = L.marker(
+                [-36.9148565, -73.028948],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_fa8f78b818d269f08ce27bdcc11a2f2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d210fd068bb902f3e293618938381ef9.bindTooltip(
+                `<div>
+                     Bdo O'Higgins - Portales
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d210fd068bb902f3e293618938381ef9.setIcon(icon_fa8f78b818d269f08ce27bdcc11a2f2f);
+            
+    
+            var marker_80dc3025aa3e3d694ad2b4baba014075 = L.marker(
+                [-36.9123559, -73.0294241],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_c91d587617fc047ff983c962fbf6a5d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_80dc3025aa3e3d694ad2b4baba014075.bindTooltip(
+                `<div>
+                     Bdo O'Higgins - Vilumilla
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_80dc3025aa3e3d694ad2b4baba014075.setIcon(icon_c91d587617fc047ff983c962fbf6a5d8);
+            
+    
+            var marker_dd4ccb8b5ff1be894ebd35a0c2271f11 = L.marker(
+                [-36.9107582, -73.0291948],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_40c61ac371a237ccc981b41f5359d551 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_dd4ccb8b5ff1be894ebd35a0c2271f11.bindTooltip(
+                `<div>
+                     Bdo O'Higgins - Bilbao
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd4ccb8b5ff1be894ebd35a0c2271f11.setIcon(icon_40c61ac371a237ccc981b41f5359d551);
+            
+    
+            var marker_2c299e853300a1c3dadc4ed8bc210b00 = L.marker(
+                [-36.9083943, -73.029459],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_5fccee7c5a877f269d90423d0b4d66a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2c299e853300a1c3dadc4ed8bc210b00.bindTooltip(
+                `<div>
+                     Bdo O'Higgins - La Plaza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c299e853300a1c3dadc4ed8bc210b00.setIcon(icon_5fccee7c5a877f269d90423d0b4d66a7);
+            
+    
+            var marker_0e0c8a245f611d4597674318363f3321 = L.marker(
+                [-36.9052174, -73.0298305],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_616eacd8e695dcdb2c1772a92ed27a0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0e0c8a245f611d4597674318363f3321.bindTooltip(
+                `<div>
+                     Seminario de Concepción
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0e0c8a245f611d4597674318363f3321.setIcon(icon_616eacd8e695dcdb2c1772a92ed27a0e);
+            
+    
+            var marker_38a1a219228551c3943be8cb92230df6 = L.marker(
+                [-36.9046501, -73.0300645],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_57e1497c0aa159233e4165ff0e7dc4a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_38a1a219228551c3943be8cb92230df6.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - Pasaje 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_38a1a219228551c3943be8cb92230df6.setIcon(icon_57e1497c0aa159233e4165ff0e7dc4a7);
+            
+    
+            var marker_ecfd9cccfb0d25b7dc13fbba45e2e3b1 = L.marker(
+                [-36.8999191, -73.0305869],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_fa1a3af5b73d207cd660f516ecbfe8c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ecfd9cccfb0d25b7dc13fbba45e2e3b1.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - Calle1 / Oriente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ecfd9cccfb0d25b7dc13fbba45e2e3b1.setIcon(icon_fa1a3af5b73d207cd660f516ecbfe8c7);
+            
+    
+            var marker_7777e9cfaf377a3c22b0eec2bf98586a = L.marker(
+                [-36.8997571, -73.0308517],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_df129d46534e1be3b7cfe5b3809d6876 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7777e9cfaf377a3c22b0eec2bf98586a.bindTooltip(
+                `<div>
+                     Bdo O'Higgins - Calle1 / Poniente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7777e9cfaf377a3c22b0eec2bf98586a.setIcon(icon_df129d46534e1be3b7cfe5b3809d6876);
+            
+    
+            var marker_c4fa699cc4cf443e057e500e55eeb84c = L.marker(
+                [-36.8903915, -73.0359982],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_28cdd26478a00c9af2d7c57c41dee58b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c4fa699cc4cf443e057e500e55eeb84c.bindTooltip(
+                `<div>
+                     Camino A Chiguayante - Las Palmas / Poniente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c4fa699cc4cf443e057e500e55eeb84c.setIcon(icon_28cdd26478a00c9af2d7c57c41dee58b);
+            
+    
+            var marker_71c5cf0b444a03caa53eb9416a92023a = L.marker(
+                [-36.8904548, -73.0357387],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_e5018e026c74e8b728d4287f114d5ffe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_71c5cf0b444a03caa53eb9416a92023a.bindTooltip(
+                `<div>
+                     Camino A Chiguayante - Las Palmas / Oriente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_71c5cf0b444a03caa53eb9416a92023a.setIcon(icon_e5018e026c74e8b728d4287f114d5ffe);
+            
+    
+            var marker_bc9fb913a812f328069ff9767e8cdba6 = L.marker(
+                [-36.8850654, -73.0376142],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_dd1a57e270086474eb581b89e142f4f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_bc9fb913a812f328069ff9767e8cdba6.bindTooltip(
+                `<div>
+                     Camino A Chiguayante - Pasaje C / Poniente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc9fb913a812f328069ff9767e8cdba6.setIcon(icon_dd1a57e270086474eb581b89e142f4f9);
+            
+    
+            var marker_87aca25b0173bd45b469698b623b51c5 = L.marker(
+                [-36.8802739, -73.0380655],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_fbbf07ac487ffcc8241d8ec1d090b717 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_87aca25b0173bd45b469698b623b51c5.bindTooltip(
+                `<div>
+                     Cno. A Chiguayante - Ignacio Verdugo / Poniente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_87aca25b0173bd45b469698b623b51c5.setIcon(icon_fbbf07ac487ffcc8241d8ec1d090b717);
+            
+    
+            var marker_6942d221b10af1ad80710816e82ef0fa = L.marker(
+                [-36.8742385, -73.040593],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_8a53eac8344509cbc85a6088f149bc53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6942d221b10af1ad80710816e82ef0fa.bindTooltip(
+                `<div>
+                     Cno A Chiguayante - Av. Nahuelbuta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6942d221b10af1ad80710816e82ef0fa.setIcon(icon_8a53eac8344509cbc85a6088f149bc53);
+            
+    
+            var marker_cc8a3132ee797b31fc5e8b3748c86419 = L.marker(
+                [-36.870689, -73.0421124],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_f1f4710d9970bb700665bc7bbf98f7db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_cc8a3132ee797b31fc5e8b3748c86419.bindTooltip(
+                `<div>
+                     Camino A Chiguayante - Uno Pte / Poniente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cc8a3132ee797b31fc5e8b3748c86419.setIcon(icon_f1f4710d9970bb700665bc7bbf98f7db);
+            
+    
+            var marker_598ccbc6e942feeec9aa0267e7ba6a0a = L.marker(
+                [-36.867416, -73.0425971],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_8e74b96dec8b11d787eceb8bca13b637 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_598ccbc6e942feeec9aa0267e7ba6a0a.bindTooltip(
+                `<div>
+                     Cno. Chiguayante - Abraham Romero / Oriente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_598ccbc6e942feeec9aa0267e7ba6a0a.setIcon(icon_8e74b96dec8b11d787eceb8bca13b637);
+            
+    
+            var marker_1c26f7f517414711905f1ce688a5694d = L.marker(
+                [-36.8655245, -73.0431523],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_eb6c4c899a79dea697600c071b5114ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1c26f7f517414711905f1ce688a5694d.bindTooltip(
+                `<div>
+                     Cno. A Chiguayate - Errázuriz / Oriente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1c26f7f517414711905f1ce688a5694d.setIcon(icon_eb6c4c899a79dea697600c071b5114ab);
+            
+    
+            var marker_d95bb78741b88dd3f3ab230fa3c2f5a3 = L.marker(
+                [-36.8652373, -73.0430172],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_c7d2ef9a85bb47aebfa24ec9408cae54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d95bb78741b88dd3f3ab230fa3c2f5a3.bindTooltip(
+                `<div>
+                     Salida Lonco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d95bb78741b88dd3f3ab230fa3c2f5a3.setIcon(icon_c7d2ef9a85bb47aebfa24ec9408cae54);
+            
+    
+            var marker_c41909523cf4821c300c8a680f121eba = L.marker(
+                [-36.8552895, -73.0498499],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_13619f783d32c79697d5579bf215e6d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c41909523cf4821c300c8a680f121eba.bindTooltip(
+                `<div>
+                     Pedro de Valdivia - Sanders / Poniente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c41909523cf4821c300c8a680f121eba.setIcon(icon_13619f783d32c79697d5579bf215e6d9);
+            
+    
+            var marker_ca5756b4e0224d2767d7ac07f97108f6 = L.marker(
+                [-36.8528471, -73.0503676],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_39bfa07e59b4b799896c207b69452c67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ca5756b4e0224d2767d7ac07f97108f6.bindTooltip(
+                `<div>
+                     Pedro de Valdivia - Inglesa / Oriente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca5756b4e0224d2767d7ac07f97108f6.setIcon(icon_39bfa07e59b4b799896c207b69452c67);
+            
+    
+            var marker_d1ccbf868ec5beb3d523fba62cfcd8c3 = L.marker(
+                [-36.8482449, -73.0513879],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_8922ebed66d2e0acbefade7a6f5a40d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d1ccbf868ec5beb3d523fba62cfcd8c3.bindTooltip(
+                `<div>
+                     Pedro de Valdivia - Sta Lucia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1ccbf868ec5beb3d523fba62cfcd8c3.setIcon(icon_8922ebed66d2e0acbefade7a6f5a40d1);
+            
+    
+            var marker_525db85ee172cfc11c0fbbcec536bc52 = L.marker(
+                [-36.846891, -73.0512815],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_0df001fcae1066b6904aa9380f267634 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_525db85ee172cfc11c0fbbcec536bc52.bindTooltip(
+                `<div>
+                     Pedro de Valdivia - La Mochita
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_525db85ee172cfc11c0fbbcec536bc52.setIcon(icon_0df001fcae1066b6904aa9380f267634);
+            
+    
+            var marker_cb7f9bb38cd83b42f4d62032a68c3d4f = L.marker(
+                [-36.844179, -73.0525127],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_7e812c13379d0d353fbd29a8f3794644 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_cb7f9bb38cd83b42f4d62032a68c3d4f.bindTooltip(
+                `<div>
+                     Pedro de Valdivia - Arturo Junge
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb7f9bb38cd83b42f4d62032a68c3d4f.setIcon(icon_7e812c13379d0d353fbd29a8f3794644);
+            
+    
+            var marker_b87bc613557adbd00d36d9746b84bdfb = L.marker(
+                [-36.8400346, -73.0545503],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_78cbc806c8f8b1dd7f658f5eab4e5f8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b87bc613557adbd00d36d9746b84bdfb.bindTooltip(
+                `<div>
+                     Pedro de Valdivia - Pasaje Ccu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b87bc613557adbd00d36d9746b84bdfb.setIcon(icon_78cbc806c8f8b1dd7f658f5eab4e5f8a);
+            
+    
+            var marker_1101e18a5f5dfa0940be6710ddba816e = L.marker(
+                [-36.8386226, -73.0553295],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_84e5bc4646d57f7a078dfd1f716e69fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1101e18a5f5dfa0940be6710ddba816e.bindTooltip(
+                `<div>
+                     Pedro de Valdivia - Alonso de Ercilla
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1101e18a5f5dfa0940be6710ddba816e.setIcon(icon_84e5bc4646d57f7a078dfd1f716e69fd);
+            
+    
+            var marker_afd570de68307a1366f0b27c88e026e6 = L.marker(
+                [-36.8364604, -73.0557173],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_7996456f0aaaf24a0eb7a9fdb2cc0bb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_afd570de68307a1366f0b27c88e026e6.bindTooltip(
+                `<div>
+                     Pedro de Valdivia - Rancagua / Oriente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_afd570de68307a1366f0b27c88e026e6.setIcon(icon_7996456f0aaaf24a0eb7a9fdb2cc0bb3);
+            
+    
+            var marker_fa9db697e1e89e8f77a75171fb2f1814 = L.marker(
+                [-36.8366675, -73.0559573],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_d6a1ed21aa08be48a728b6bd662dd1f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fa9db697e1e89e8f77a75171fb2f1814.bindTooltip(
+                `<div>
+                     Pedro de Valdivia - Rancagua (O)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fa9db697e1e89e8f77a75171fb2f1814.setIcon(icon_d6a1ed21aa08be48a728b6bd662dd1f5);
+            
+    
+            var marker_666217d6baad04b3fba96adb4403cb02 = L.marker(
+                [-36.8341637, -73.0560678],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_734cb72617e3c623bab00e55284ef9c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_666217d6baad04b3fba96adb4403cb02.bindTooltip(
+                `<div>
+                     Arturo Prat - Chacabuco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_666217d6baad04b3fba96adb4403cb02.setIcon(icon_734cb72617e3c623bab00e55284ef9c9);
+            
+    
+            var marker_1c5ac11b8ceb02ff7b11156ff552ff78 = L.marker(
+                [-36.8332578, -73.056568],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_42557207ef31ce701604a7c034458bcb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1c5ac11b8ceb02ff7b11156ff552ff78.bindTooltip(
+                `<div>
+                     Arturo Prat - Cochrane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1c5ac11b8ceb02ff7b11156ff552ff78.setIcon(icon_42557207ef31ce701604a7c034458bcb);
+            
+    
+            var marker_42c66d4f433ee0cf02485a4e86931a23 = L.marker(
+                [-36.8258882, -73.0426844],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_19205db74181ea669c3e0c550669b517 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_42c66d4f433ee0cf02485a4e86931a23.bindTooltip(
+                `<div>
+                     San Martín - Ongolmo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_42c66d4f433ee0cf02485a4e86931a23.setIcon(icon_19205db74181ea669c3e0c550669b517);
+            
+    
+            var marker_2ed9e975a9a6d124398abe6f3e774676 = L.marker(
+                [-36.8239985, -73.041394],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_8f3d714ad02749c22d650eb59dd44459 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2ed9e975a9a6d124398abe6f3e774676.bindTooltip(
+                `<div>
+                     Bernardo O'Higgins - Paicaví
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ed9e975a9a6d124398abe6f3e774676.setIcon(icon_8f3d714ad02749c22d650eb59dd44459);
+            
+    
+            var marker_200bac5f87c1114f1a8ef158ff81efb0 = L.marker(
+                [-36.8232211, -73.0421396],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_1cd18317065b08a86c867ac08570a815 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_200bac5f87c1114f1a8ef158ff81efb0.bindTooltip(
+                `<div>
+                     Paicaaví - Barros Arana / Oriente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_200bac5f87c1114f1a8ef158ff81efb0.setIcon(icon_1cd18317065b08a86c867ac08570a815);
+            
+    
+            var marker_41b0089d19a6a3b0dcd23a086c5e9ba7 = L.marker(
+                [-36.8220144, -73.0428041],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_17331455f28527e94ee40d7425f77f6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_41b0089d19a6a3b0dcd23a086c5e9ba7.bindTooltip(
+                `<div>
+                     Freire - Paicavi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_41b0089d19a6a3b0dcd23a086c5e9ba7.setIcon(icon_17331455f28527e94ee40d7425f77f6e);
+            
+    
+            var marker_3c28d3119766513bfe8c53e6151f64a8 = L.marker(
+                [-36.8183223, -73.0453062],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_ea58b60ccfc756337b870672559ae071 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3c28d3119766513bfe8c53e6151f64a8.bindTooltip(
+                `<div>
+                     Paicaví / Remodelación Paicaví
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3c28d3119766513bfe8c53e6151f64a8.setIcon(icon_ea58b60ccfc756337b870672559ae071);
+            
+    
+            var marker_5b4885aec5f3917d670f3c25c8c782e7 = L.marker(
+                [-36.817482, -73.0459595],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_2ffb3d90998a985b30b608e7cdef31cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5b4885aec5f3917d670f3c25c8c782e7.bindTooltip(
+                `<div>
+                     Paicaví - Martínez de Rozas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b4885aec5f3917d670f3c25c8c782e7.setIcon(icon_2ffb3d90998a985b30b608e7cdef31cc);
+            
+    
+            var marker_aa35a2732cfe458a05966b5775f6ebb8 = L.marker(
+                [-36.8166083, -73.0463803],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_517ec7f2853712b929c56c8e873dc835 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_aa35a2732cfe458a05966b5775f6ebb8.bindTooltip(
+                `<div>
+                     Paicaví/Bulnes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa35a2732cfe458a05966b5775f6ebb8.setIcon(icon_517ec7f2853712b929c56c8e873dc835);
+            
+    
+            var marker_0ebb657cb09ebc9f9dd89327ca3b490c = L.marker(
+                [-36.8146872, -73.0475334],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_e6a993a8d11a37397a56eac647db449c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0ebb657cb09ebc9f9dd89327ca3b490c.bindTooltip(
+                `<div>
+                     Paicaví / Prieto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ebb657cb09ebc9f9dd89327ca3b490c.setIcon(icon_e6a993a8d11a37397a56eac647db449c);
+            
+    
+            var marker_7cb9fa0bcfe9c3d188064b35cb4965a0 = L.marker(
+                [-36.8133351, -73.0485621],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_cfef15933a92bd31638ecdc82265944b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7cb9fa0bcfe9c3d188064b35cb4965a0.bindTooltip(
+                `<div>
+                     Paicaví - Manuel Rodríguez
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7cb9fa0bcfe9c3d188064b35cb4965a0.setIcon(icon_cfef15933a92bd31638ecdc82265944b);
+            
+    
+            var marker_3f2e1ba084fdcd07b641fc8ff25a62d3 = L.marker(
+                [-36.8126534, -73.0489148],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_5bed0e220f0fd800baa3e2c5cecbffbf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3f2e1ba084fdcd07b641fc8ff25a62d3.bindTooltip(
+                `<div>
+                     Paicaví/Bandera
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3f2e1ba084fdcd07b641fc8ff25a62d3.setIcon(icon_5bed0e220f0fd800baa3e2c5cecbffbf);
+            
+    
+            var marker_3299bf480c07a67aee4cfe96e9abd6a7 = L.marker(
+                [-36.811216, -73.0499346],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_a7c5aa4afbc0461ede819c3afdb7f100 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3299bf480c07a67aee4cfe96e9abd6a7.bindTooltip(
+                `<div>
+                     Paicaví - Vicuña Mackenna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3299bf480c07a67aee4cfe96e9abd6a7.setIcon(icon_a7c5aa4afbc0461ede819c3afdb7f100);
+            
+    
+            var marker_31df846f73e8361f443d1697a42308b7 = L.marker(
+                [-36.8104972, -73.0502262],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_c32c8eceadbd6e2167290b27d349c04f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_31df846f73e8361f443d1697a42308b7.bindTooltip(
+                `<div>
+                     Paicaví / Brasil
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_31df846f73e8361f443d1697a42308b7.setIcon(icon_c32c8eceadbd6e2167290b27d349c04f);
+            
+    
+            var marker_96a9d458169ce7e9245dede32e7e7af1 = L.marker(
+                [-36.8095574, -73.0503565],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_6985ad524f5d7931d465d01d89982a19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_96a9d458169ce7e9245dede32e7e7af1.bindTooltip(
+                `<div>
+                     Ejército - Paicaví
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_96a9d458169ce7e9245dede32e7e7af1.setIcon(icon_6985ad524f5d7931d465d01d89982a19);
+            
+    
+            var marker_fdfb2691e1bbe4afa6f287ea6ecf11fe = L.marker(
+                [-36.8091892, -73.0512491],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_c8f89deae35bcd944448bcbd922143d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fdfb2691e1bbe4afa6f287ea6ecf11fe.bindTooltip(
+                `<div>
+                     Paicaví - Ejército
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdfb2691e1bbe4afa6f287ea6ecf11fe.setIcon(icon_c8f89deae35bcd944448bcbd922143d2);
+            
+    
+            var marker_8bd0a568be8515f436ff3b9149aefd53 = L.marker(
+                [-36.808313, -73.0517363],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_efb2e0ba4eff7fa903939588f94fce7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8bd0a568be8515f436ff3b9149aefd53.bindTooltip(
+                `<div>
+                     Paicaví - Juan de Dios Rivera
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8bd0a568be8515f436ff3b9149aefd53.setIcon(icon_efb2e0ba4eff7fa903939588f94fce7e);
+            
+    
+            var marker_72b5966b50412a5d47d4f084e613c621 = L.marker(
+                [-36.8048414, -73.0541627],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_809570735eac6584dba7a92bc21347a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_72b5966b50412a5d47d4f084e613c621.bindTooltip(
+                `<div>
+                     Paicaví - Bellavista
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_72b5966b50412a5d47d4f084e613c621.setIcon(icon_809570735eac6584dba7a92bc21347a6);
+            
+    
+            var marker_eba6fdbef2aa7ae34115e4432b5bab9c = L.marker(
+                [-36.8043252, -73.0544382],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_0e83e78aade15292d252f8947017bf14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_eba6fdbef2aa7ae34115e4432b5bab9c.bindTooltip(
+                `<div>
+                     Paicaví - Independencia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eba6fdbef2aa7ae34115e4432b5bab9c.setIcon(icon_0e83e78aade15292d252f8947017bf14);
+            
+    
+            var marker_87675fc5674ba710f2a3f1a64ba3ec59 = L.marker(
+                [-36.8017748, -73.0561625],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_792e7813c9a55905089da77ef185c0d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_87675fc5674ba710f2a3f1a64ba3ec59.bindTooltip(
+                `<div>
+                     Paicaví - U. Católica
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_87675fc5674ba710f2a3f1a64ba3ec59.setIcon(icon_792e7813c9a55905089da77ef185c0d8);
+            
+    
+            var marker_19f57f350ac4185c55d7f137ef25c5d1 = L.marker(
+                [-36.8008905, -73.0566171],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_a1ad71fa36cdb5d4bb96b31776b5ba8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_19f57f350ac4185c55d7f137ef25c5d1.bindTooltip(
+                `<div>
+                     Paicaví - Calle Nueva
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_19f57f350ac4185c55d7f137ef25c5d1.setIcon(icon_a1ad71fa36cdb5d4bb96b31776b5ba8a);
+            
+    
+            var marker_56a6ad2b5cc6c133792d33237044c23c = L.marker(
+                [-36.79756, -73.0614153],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_9cf55b83dd5ad7d986bcd9fce9efe50b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_56a6ad2b5cc6c133792d33237044c23c.bindTooltip(
+                `<div>
+                     Duoc - Uc / Paicaví
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56a6ad2b5cc6c133792d33237044c23c.setIcon(icon_9cf55b83dd5ad7d986bcd9fce9efe50b);
+            
+    
+            var marker_d92268ddd7d9cb77ae87a76bea74b23b = L.marker(
+                [-36.7910894, -73.0702531],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_a1160919c2907178218989a74046043a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d92268ddd7d9cb77ae87a76bea74b23b.bindTooltip(
+                `<div>
+                     Autopista - Mall Plaza Trebol Este
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d92268ddd7d9cb77ae87a76bea74b23b.setIcon(icon_a1160919c2907178218989a74046043a);
+            
+    
+            var marker_24aefb90f91ab4a062c7745c4d2d4f66 = L.marker(
+                [-36.779109, -73.0776778],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_df7a8858a85a41ef5c6de54666d8a158 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_24aefb90f91ab4a062c7745c4d2d4f66.bindTooltip(
+                `<div>
+                     Autopista Talcahuano Concepción 7100
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_24aefb90f91ab4a062c7745c4d2d4f66.setIcon(icon_df7a8858a85a41ef5c6de54666d8a158);
+            
+    
+            var marker_b060c07aedac5e45cb9dfbbd0b2c1c47 = L.marker(
+                [-36.763908, -73.0867689],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_b96f5779df3bf791627a7d546a9844e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b060c07aedac5e45cb9dfbbd0b2c1c47.bindTooltip(
+                `<div>
+                     Autop. entre Los Claveles y Los Gladiolos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b060c07aedac5e45cb9dfbbd0b2c1c47.setIcon(icon_b96f5779df3bf791627a7d546a9844e3);
+            
+    
+            var marker_a5448394364881f33363cdf281e40b0b = L.marker(
+                [-36.763238, -73.0870508],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_be2905a6f734b426ee4ba3eff44b38f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a5448394364881f33363cdf281e40b0b.bindTooltip(
+                `<div>
+                     Gómez Carreño - Los Juncos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a5448394364881f33363cdf281e40b0b.setIcon(icon_be2905a6f734b426ee4ba3eff44b38f3);
+            
+    
+            var marker_919e505762e326d5795009c50092e66e = L.marker(
+                [-36.7613648, -73.0885304],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_ce9b7658303d2d8a01502d61298abcd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_919e505762e326d5795009c50092e66e.bindTooltip(
+                `<div>
+                     Colón - Los Geranios
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_919e505762e326d5795009c50092e66e.setIcon(icon_ce9b7658303d2d8a01502d61298abcd3);
+            
+    
+            var marker_f5c9aa05accfe1fc8bf0823d5b84e297 = L.marker(
+                [-36.760834, -73.0889729],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_6dab84b135f9eb7ba3dd2074750603bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f5c9aa05accfe1fc8bf0823d5b84e297.bindTooltip(
+                `<div>
+                     Colón - La Camelia / Poniente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f5c9aa05accfe1fc8bf0823d5b84e297.setIcon(icon_6dab84b135f9eb7ba3dd2074750603bf);
+            
+    
+            var marker_645c19f4a4c5dbf9479d88e40e3ebfcb = L.marker(
+                [-36.7589255, -73.0900713],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_f5b82b3445d0fb96d026a15457508567 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_645c19f4a4c5dbf9479d88e40e3ebfcb.bindTooltip(
+                `<div>
+                     Colón - Petunias / Poniente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_645c19f4a4c5dbf9479d88e40e3ebfcb.setIcon(icon_f5b82b3445d0fb96d026a15457508567);
+            
+    
+            var marker_0204148fe5549942cf25d0c66e2ccfda = L.marker(
+                [-36.7583462, -73.0902732],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_0b02a72e6b8b13fedad450e385f06968 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0204148fe5549942cf25d0c66e2ccfda.bindTooltip(
+                `<div>
+                     Colón - Petunias
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0204148fe5549942cf25d0c66e2ccfda.setIcon(icon_0b02a72e6b8b13fedad450e385f06968);
+            
+    
+            var marker_78f85767b324c759d8dd3814eaf148df = L.marker(
+                [-36.7566694, -73.0913584],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_5883e69579601ab53db26a4ea2ad73c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_78f85767b324c759d8dd3814eaf148df.bindTooltip(
+                `<div>
+                     Colon - Los Condores
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78f85767b324c759d8dd3814eaf148df.setIcon(icon_5883e69579601ab53db26a4ea2ad73c0);
+            
+    
+            var marker_143c7aef4719b8b975c1bc3b10f5b51f = L.marker(
+                [-36.7560276, -73.0915911],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_470967f62b83d7b59e951087e6246961 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_143c7aef4719b8b975c1bc3b10f5b51f.bindTooltip(
+                `<div>
+                     Colon - Las Rosas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_143c7aef4719b8b975c1bc3b10f5b51f.setIcon(icon_470967f62b83d7b59e951087e6246961);
+            
+    
+            var marker_65744bb66ec4ca5c5f2f23d39a0ed590 = L.marker(
+                [-36.7530396, -73.0922227],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_edacf10d59f6ebe172260bc3e54caa37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_65744bb66ec4ca5c5f2f23d39a0ed590.bindTooltip(
+                `<div>
+                     Colón - Juan Guillermo Sosa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_65744bb66ec4ca5c5f2f23d39a0ed590.setIcon(icon_edacf10d59f6ebe172260bc3e54caa37);
+            
+    
+            var marker_401ccb1f2b32f34a2f717825ecfbe04c = L.marker(
+                [-36.7506849, -73.0932063],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_3a120ca48e4b37f54f32df3f2d494ccc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_401ccb1f2b32f34a2f717825ecfbe04c.bindTooltip(
+                `<div>
+                     Colón - Simón Bolívar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_401ccb1f2b32f34a2f717825ecfbe04c.setIcon(icon_3a120ca48e4b37f54f32df3f2d494ccc);
+            
+    
+            var marker_d576927d467105ae2542b071dd13fd9e = L.marker(
+                [-36.749942, -73.0933969],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_c07dcacddef8de28f9476d4d1227263a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d576927d467105ae2542b071dd13fd9e.bindTooltip(
+                `<div>
+                     Colon - Villa El Sauce
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d576927d467105ae2542b071dd13fd9e.setIcon(icon_c07dcacddef8de28f9476d4d1227263a);
+            
+    
+            var marker_4cdc2973dd588fc0e730ad6eaac23620 = L.marker(
+                [-36.747952, -73.0944503],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_d4ce43dc406899e529b083b72379e77a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4cdc2973dd588fc0e730ad6eaac23620.bindTooltip(
+                `<div>
+                     Colón 3646
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4cdc2973dd588fc0e730ad6eaac23620.setIcon(icon_d4ce43dc406899e529b083b72379e77a);
+            
+    
+            var marker_5de0e8bd00d746d084e7c66ff5955b18 = L.marker(
+                [-36.7470812, -73.0947007],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_fde422bd38acf117da10255fa3e23c48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5de0e8bd00d746d084e7c66ff5955b18.bindTooltip(
+                `<div>
+                     Colón - Manuel Zañartu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5de0e8bd00d746d084e7c66ff5955b18.setIcon(icon_fde422bd38acf117da10255fa3e23c48);
+            
+    
+            var marker_36d6f27522dab7c83d19e5b05a903fa7 = L.marker(
+                [-36.7432574, -73.097529],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_803dea19eefcbdc6481f90f8898e3bbd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_36d6f27522dab7c83d19e5b05a903fa7.bindTooltip(
+                `<div>
+                     Colón - Iquique
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_36d6f27522dab7c83d19e5b05a903fa7.setIcon(icon_803dea19eefcbdc6481f90f8898e3bbd);
+            
+    
+            var marker_9db717d6efdb7070edb974dc3c4de7fc = L.marker(
+                [-36.7418523, -73.098419],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_e9670e82aed228c6434c312b1198b797 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9db717d6efdb7070edb974dc3c4de7fc.bindTooltip(
+                `<div>
+                     31
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9db717d6efdb7070edb974dc3c4de7fc.setIcon(icon_e9670e82aed228c6434c312b1198b797);
+            
+    
+            var marker_ef580261ba69946d037b22520844df23 = L.marker(
+                [-36.7417212, -73.0981408],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_f344e4598c611e851db762d3c17b6d82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ef580261ba69946d037b22520844df23.bindTooltip(
+                `<div>
+                     32
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef580261ba69946d037b22520844df23.setIcon(icon_f344e4598c611e851db762d3c17b6d82);
+            
+    
+            var marker_75f12d203ec27f9221c90afd8537dd2f = L.marker(
+                [-36.7408421, -73.0988053],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_c9c202aaca500522a9852b43e0e224a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_75f12d203ec27f9221c90afd8537dd2f.bindTooltip(
+                `<div>
+                     Colón - Manuel Montt
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75f12d203ec27f9221c90afd8537dd2f.setIcon(icon_c9c202aaca500522a9852b43e0e224a8);
+            
+    
+            var marker_c5853c98219e92786c82346325873795 = L.marker(
+                [-36.7393253, -73.1001888],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_9d23f876c026ae8913d2d2643a3ba990 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c5853c98219e92786c82346325873795.bindTooltip(
+                `<div>
+                     Colon - Zenteno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c5853c98219e92786c82346325873795.setIcon(icon_9d23f876c026ae8913d2d2643a3ba990);
+            
+    
+            var marker_eb156cff86012030801ceb7c78767934 = L.marker(
+                [-36.7385978, -73.100835],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_016d30ada42ed1c424d38b6eb3ef270d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_eb156cff86012030801ceb7c78767934.bindTooltip(
+                `<div>
+                     Colón - Buzo Sobenez
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb156cff86012030801ceb7c78767934.setIcon(icon_016d30ada42ed1c424d38b6eb3ef270d);
+            
+    
+            var marker_d356f1a6c01a29d79b4b0542215a2fa9 = L.marker(
+                [-36.7371197, -73.102743],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_551dea0430dea7a8d08cdd8baaaf9e18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d356f1a6c01a29d79b4b0542215a2fa9.bindTooltip(
+                `<div>
+                     Colón - Bernardita
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d356f1a6c01a29d79b4b0542215a2fa9.setIcon(icon_551dea0430dea7a8d08cdd8baaaf9e18);
+            
+    
+            var marker_e0470e0dd0542a5523b5598f4a7a8b8c = L.marker(
+                [-36.7364357, -73.103435],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_85b8a95bf32f8664f7a9503d3bc43724 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e0470e0dd0542a5523b5598f4a7a8b8c.bindTooltip(
+                `<div>
+                     Colón - Itata
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e0470e0dd0542a5523b5598f4a7a8b8c.setIcon(icon_85b8a95bf32f8664f7a9503d3bc43724);
+            
+    
+            var marker_41e2c2b803504911acff1f31713bd407 = L.marker(
+                [-36.7351522, -73.1052338],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_89bd19cef113884979c6ec4db290ec87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_41e2c2b803504911acff1f31713bd407.bindTooltip(
+                `<div>
+                     Colón - Lircay Sur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_41e2c2b803504911acff1f31713bd407.setIcon(icon_89bd19cef113884979c6ec4db290ec87);
+            
+    
+            var marker_0bd7798aefcb2aad0517708cde46634e = L.marker(
+                [-36.7346001, -73.1057715],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_ee14ff5e6b65811262e400735148af87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0bd7798aefcb2aad0517708cde46634e.bindTooltip(
+                `<div>
+                     Colón - Lircay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0bd7798aefcb2aad0517708cde46634e.setIcon(icon_ee14ff5e6b65811262e400735148af87);
+            
+    
+            var marker_8d73cc3723bd97fc30b04ecaae3addcc = L.marker(
+                [-36.7323071, -73.1084085],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_4a2110805f1d94181cc7700cab6084e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8d73cc3723bd97fc30b04ecaae3addcc.bindTooltip(
+                `<div>
+                     Colón - Hualpén
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8d73cc3723bd97fc30b04ecaae3addcc.setIcon(icon_4a2110805f1d94181cc7700cab6084e7);
+            
+    
+            var marker_f239e744c37d8de3d5f8bdffb23757d9 = L.marker(
+                [-36.7314689, -73.1088772],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_b721eb2340bed4aef95d04049c1bd4d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f239e744c37d8de3d5f8bdffb23757d9.bindTooltip(
+                `<div>
+                     Pérez Gacitúa - Hualpén
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f239e744c37d8de3d5f8bdffb23757d9.setIcon(icon_b721eb2340bed4aef95d04049c1bd4d8);
+            
+    
+            var marker_3d14b3f21876eeb65bb363388b91903b = L.marker(
+                [-36.7245584, -73.1063777],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_7b1e1ec8e066db22b72b6d9217b0a5f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3d14b3f21876eeb65bb363388b91903b.bindTooltip(
+                `<div>
+                     Pérez Gacitúa - Manuel Rodríguez
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d14b3f21876eeb65bb363388b91903b.setIcon(icon_7b1e1ec8e066db22b72b6d9217b0a5f9);
+            
+    
+            var marker_a3a53174a15347f76764d5aa0a4be77c = L.marker(
+                [-36.7229014, -73.1077082],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_b2afa787879b62a531f9238d67bdbee8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a3a53174a15347f76764d5aa0a4be77c.bindTooltip(
+                `<div>
+                     Estadio El Morro de Talcahuano
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a3a53174a15347f76764d5aa0a4be77c.setIcon(icon_b2afa787879b62a531f9238d67bdbee8);
+            
+    
+            var marker_9fbc7f963f729388924fe3527a97fb6f = L.marker(
+                [-36.7148321, -73.1101617],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_ecb2d937004793b46d3319f95f7c8ea7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9fbc7f963f729388924fe3527a97fb6f.bindTooltip(
+                `<div>
+                     Blanco Encalada - Esmeralda / Sur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9fbc7f963f729388924fe3527a97fb6f.setIcon(icon_ecb2d937004793b46d3319f95f7c8ea7);
+            
+    
+            var marker_5af62f9fa5f7377bf9477cc538a7b60e = L.marker(
+                [-36.7124532, -73.113805],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_723ad81a9486935607bc1cfa9e2bb48f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5af62f9fa5f7377bf9477cc538a7b60e.bindTooltip(
+                `<div>
+                     Blanco Encalada - Maipú / Sur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5af62f9fa5f7377bf9477cc538a7b60e.setIcon(icon_723ad81a9486935607bc1cfa9e2bb48f);
+            
+    
+            var marker_019f84d67fce71d4fa7f0f0bc1c71707 = L.marker(
+                [-36.7121774, -73.1136156],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_3be49983bb94584e2b94f6626a54c5d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_019f84d67fce71d4fa7f0f0bc1c71707.bindTooltip(
+                `<div>
+                     Blanco Encalada - Maipú / Norte
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_019f84d67fce71d4fa7f0f0bc1c71707.setIcon(icon_3be49983bb94584e2b94f6626a54c5d5);
+            
+    
+            var marker_d942bb1c85ba9d1653c39d16834b18b6 = L.marker(
+                [-36.7108973, -73.1152189],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_0ae1c058bae2e85cff46b73c0e4a4508 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d942bb1c85ba9d1653c39d16834b18b6.bindTooltip(
+                `<div>
+                     Transportes Cruz Del Sur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d942bb1c85ba9d1653c39d16834b18b6.setIcon(icon_0ae1c058bae2e85cff46b73c0e4a4508);
+            
+    
+            var marker_7cb6fdbec1f9ed8d4ac01b24d84462e5 = L.marker(
+                [-36.7117447, -73.1150346],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_07648035ce94254a4759d367583c6fe0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7cb6fdbec1f9ed8d4ac01b24d84462e5.bindTooltip(
+                `<div>
+                     Plaza El Ancla
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7cb6fdbec1f9ed8d4ac01b24d84462e5.setIcon(icon_07648035ce94254a4759d367583c6fe0);
+            
+    
+            var marker_c7d5d41324f425e14fcc01e8caef3334 = L.marker(
+                [-36.7118243, -73.115443],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_86e4f3b7c99a3ca23f05bbcca52544f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c7d5d41324f425e14fcc01e8caef3334.bindTooltip(
+                `<div>
+                     Mercado (Talcahuano)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c7d5d41324f425e14fcc01e8caef3334.setIcon(icon_86e4f3b7c99a3ca23f05bbcca52544f8);
+            
+    
+            var marker_d528dc3139b6f6f34b3ca80424b7ae44 = L.marker(
+                [-36.7131366, -73.1154135],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_b70097ff4d63638b2e5e6e0d891a8539 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d528dc3139b6f6f34b3ca80424b7ae44.bindTooltip(
+                `<div>
+                     Valdivia - Aníbal Pinto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d528dc3139b6f6f34b3ca80424b7ae44.setIcon(icon_b70097ff4d63638b2e5e6e0d891a8539);
+            
+    
+            var marker_c6e264ee506a5504b3465bb7ebfaff80 = L.marker(
+                [-36.7130268, -73.1155227],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_a43738d4ee55b3c8b0b9293c726f4288 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c6e264ee506a5504b3465bb7ebfaff80.bindTooltip(
+                `<div>
+                     Valdivia - Condell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6e264ee506a5504b3465bb7ebfaff80.setIcon(icon_a43738d4ee55b3c8b0b9293c726f4288);
+            
+    
+            var marker_261bf7ca29beeb664c0be4af2bd56703 = L.marker(
+                [-36.7142451, -73.116477],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_ccbec6079ba983a742ca6055b127b020 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_261bf7ca29beeb664c0be4af2bd56703.bindTooltip(
+                `<div>
+                     Valdivia 451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_261bf7ca29beeb664c0be4af2bd56703.setIcon(icon_ccbec6079ba983a742ca6055b127b020);
+            
+    
+            var marker_8e5c66a794cae02c0e84bb283f915321 = L.marker(
+                [-36.7142166, -73.116311],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_2f043fa53a403ab32e4a0d697d74c735 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8e5c66a794cae02c0e84bb283f915321.bindTooltip(
+                `<div>
+                     Valdivia - Sargento Aldea
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e5c66a794cae02c0e84bb283f915321.setIcon(icon_2f043fa53a403ab32e4a0d697d74c735);
+            
+    
+            var marker_6c4abc9f88fe189860407e15f93565e3 = L.marker(
+                [-36.7152057, -73.117577],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_90ab581ba457f48fcb8b6043da036b78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6c4abc9f88fe189860407e15f93565e3.bindTooltip(
+                `<div>
+                     Valdivia - Castellón
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c4abc9f88fe189860407e15f93565e3.setIcon(icon_90ab581ba457f48fcb8b6043da036b78);
+            
+    
+            var marker_499e1546d8abad01dac2f9ff478a765b = L.marker(
+                [-36.7155385, -73.1181113],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_846874f0fe988a2b525a34a196be9365 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_499e1546d8abad01dac2f9ff478a765b.bindTooltip(
+                `<div>
+                     Valdivia - Tumbes / Poniente
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_499e1546d8abad01dac2f9ff478a765b.setIcon(icon_846874f0fe988a2b525a34a196be9365);
+            
+    
+            var marker_38a60cb500261a2e37d67291afb0c366 = L.marker(
+                [-36.7238972, -73.1175604],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_b908c87f4a7a3194e961b33da8d762cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_38a60cb500261a2e37d67291afb0c366.bindTooltip(
+                `<div>
+                     Valdivia - Miranda
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_38a60cb500261a2e37d67291afb0c366.setIcon(icon_b908c87f4a7a3194e961b33da8d762cb);
+            
+    
+            var marker_8cec7d693f4b972c808300105da23b7b = L.marker(
+                [-36.7241767, -73.117525],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_c0f29b4a6fba3ac3f7a4a568a0ef9b25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8cec7d693f4b972c808300105da23b7b.bindTooltip(
+                `<div>
+                     Valdivia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8cec7d693f4b972c808300105da23b7b.setIcon(icon_c0f29b4a6fba3ac3f7a4a568a0ef9b25);
+            
+    
+            var marker_1d4ec35d8444de16c91faa9a3b429ed3 = L.marker(
+                [-36.7250667, -73.1174491],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_30aa7314ca0f646ad2152f3b19d98edd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1d4ec35d8444de16c91faa9a3b429ed3.bindTooltip(
+                `<div>
+                     José Díaz - Bilbao
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d4ec35d8444de16c91faa9a3b429ed3.setIcon(icon_30aa7314ca0f646ad2152f3b19d98edd);
+            
+    
+            var marker_dd9eb943d9d1003c16a31ca6478aa3ab = L.marker(
+                [-36.7230197, -73.1216764],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_cc18ab45278d40fad7994dab22b89bea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_dd9eb943d9d1003c16a31ca6478aa3ab.bindTooltip(
+                `<div>
+                     España - Schuyler
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd9eb943d9d1003c16a31ca6478aa3ab.setIcon(icon_cc18ab45278d40fad7994dab22b89bea);
+            
+    
+            var marker_0fb60feabca9eab7899d0ab89a2caa5c = L.marker(
+                [-36.7223989, -73.1231811],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_2b7be813d5c98f1c098921e4453b1b3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0fb60feabca9eab7899d0ab89a2caa5c.bindTooltip(
+                `<div>
+                     España - Juan de La Cruz Tapia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0fb60feabca9eab7899d0ab89a2caa5c.setIcon(icon_2b7be813d5c98f1c098921e4453b1b3b);
+            
+    
+            var marker_bf78f5b0d371abf965c12fec75549deb = L.marker(
+                [-36.7221812, -73.1258345],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_a65140f16029352ea4a7d7f4f78a115e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_bf78f5b0d371abf965c12fec75549deb.bindTooltip(
+                `<div>
+                     Brasil - Pedro Montt
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf78f5b0d371abf965c12fec75549deb.setIcon(icon_a65140f16029352ea4a7d7f4f78a115e);
+            
+    
+            var marker_b4d2b2b687e6e40b1814935333629691 = L.marker(
+                [-36.7225769, -73.1268873],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_4c3910793b8de704f08a1ac832d06519 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b4d2b2b687e6e40b1814935333629691.bindTooltip(
+                `<div>
+                     Pedro Montt - Lautaro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4d2b2b687e6e40b1814935333629691.setIcon(icon_4c3910793b8de704f08a1ac832d06519);
+            
+    
+            var marker_1ae307c6580c24021c0abcf53b834166 = L.marker(
+                [-36.7229262, -73.1276866],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_1e91146e77afc9a36e5f434cb705ecb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1ae307c6580c24021c0abcf53b834166.bindTooltip(
+                `<div>
+                     Pedro Montt - Cervantes
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1ae307c6580c24021c0abcf53b834166.setIcon(icon_1e91146e77afc9a36e5f434cb705ecb2);
+            
+    
+            var marker_db0be50bdc5778a5cfa6da3f2f826cee = L.marker(
+                [-36.7245494, -73.1299325],
+                {
+}
+            ).addTo(map_48f83b2416d66af3ae553ab850a56506);
+        
+    
+            var icon_ff1c375a87e0b10f078266c33232bc3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_db0be50bdc5778a5cfa6da3f2f826cee.bindTooltip(
+                `<div>
+                     Pedro Montt - La Marina / Sur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db0be50bdc5778a5cfa6da3f2f826cee.setIcon(icon_ff1c375a87e0b10f078266c33232bc3a);
+            
+</script>
+</html>
